@@ -7,7 +7,7 @@ session_start();
 
 	if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
-		//something was posted
+		
 		$name = $_POST['name'];
 		$user_name = $_POST['user_name'];
 		$password = $_POST['password'];
@@ -15,7 +15,6 @@ session_start();
 		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
 		{
 
-			//save to database
 			$user_id = random_num(20);
 			$query = "insert into `admins` (admin_name, login, password) values ('$name','$user_name','$password')";
 
