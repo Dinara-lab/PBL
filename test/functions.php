@@ -36,7 +36,7 @@ function random_num($length)
 	$len = rand(4,$length);
 
 	for ($i=0; $i < $len; $i++) { 
-		# code...
+		
 
 		$text .= rand(0,9);
 	}
